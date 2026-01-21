@@ -8,7 +8,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 # ---------------- ENV ----------------
 load_dotenv()
-os.environ["GOOGLE_API_KEY"] = os.getenv("gemini")
+# os.environ["GOOGLE_API_KEY"] = os.getenv("gemini")
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(page_title="AI Portfolio Generator", layout="wide")
@@ -105,3 +105,4 @@ The output should be in the below format:
             data=f,
             file_name="portfolio_website.zip"
         )
+
